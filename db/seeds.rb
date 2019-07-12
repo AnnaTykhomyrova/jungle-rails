@@ -132,5 +132,107 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+## REVIEWS
 
+puts "Finding Products ..."
+prod1 = Product.find_by! id: 1
+prod2 = Product.find_by! id: 2
+prod3 = Product.find_by! id: 3
+prod4 = Product.find_by! id: 4
+prod5 = Product.find_by! id: 5
+prod6 = Product.find_by! id: 6
+prod7 = Product.find_by! id: 7
+prod8 = Product.find_by! id: 8
+prod9 = Product.find_by! id: 9
+prod10 = Product.find_by! id: 10
+prod11 = Product.find_by! id: 11
+prod12 = Product.find_by! id: 12
+
+puts "Re-creating Reviews ..."
+
+Review.destroy_all
+
+Review.create!({
+  product_id: 2, 
+  user_id: 1, 
+  description: "Great product",
+  rating: 1
+})
+
+ Review.create!({
+  product_id: 11, 
+  user_id: 2, 
+  description: "Not recommended",
+  rating: 5
+})
+
+ Review.create!({
+  product_id: 12, 
+  user_id: 1, 
+  description: "Product is good",
+  rating: 3
+})
+
+Review.create!({
+  product_id: 10, 
+  user_id: 2, 
+  description: "Not comfortable",
+  rating: 2
+})
+
+Review.create!({
+  product_id: 9, 
+  user_id: 1, 
+  description: "Nice!",
+  rating: 5
+})
+
+Review.create!({
+  product_id: 8, 
+  user_id: 2, 
+  description: "Product is really useful",
+  rating: 4
+})
+
+Review.create!({
+  product_id: 7, 
+  user_id: 1, 
+  description: "Amazing!",
+  rating: 5
+})
+
+Review.create!({
+  product_id: 6, 
+  user_id: 2, 
+  description: "Not comfortable at all",
+  rating: 1
+})
+
+Review.create!({
+  product_id: 5, 
+  user_id: 1, 
+  description: "Не работают",
+  rating: 2
+})
+
+Review.create!({
+  product_id: 4, 
+  user_id: 2, 
+  description: "Product is good",
+  rating: 3
+}) 
+
+Review.create!({
+  product_id: 3, 
+  user_id: 1, 
+  description: "I like it!",
+  rating: 4
+})
+
+Review.create!({
+  product_id: 1, 
+  user_id: 2, 
+  description: "Very modern",
+  rating: 5
+})
 puts "DONE!"

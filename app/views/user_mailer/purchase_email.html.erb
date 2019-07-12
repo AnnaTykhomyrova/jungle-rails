@@ -10,7 +10,7 @@
     </p>
     <ul>
       <% @products.each_with_index do |item|%>
-        <li><%= item.quantity%> <%= item.product.name %>, each one costs $<%= item.total_price.to_f / 100 %></li>        
+        <li><%= item.quantity%> <%= item.product.name %>, each one costs $<%= item.total_price.to_f %></li>        
       <% end %>
     </ul>
     <p>Thank you for your purchase, please visit us again!</p>
