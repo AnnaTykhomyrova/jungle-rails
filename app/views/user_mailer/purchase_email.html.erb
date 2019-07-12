@@ -9,8 +9,8 @@
       Your order is $<%= @order.total_cents / 100 %>.<%= @order.total_cents % 100 %><br>
     </p>
     <ul>
-      <%= @to_display.each_with_index do |item, index|%>
-        <li><%= @products[index].quantity%> <%= @to_display[index].name %>, each one costs $<%= @to_display[index].price_cents.to_f / 100 %></li>        
+      <% @products.each_with_index do |item|%>
+        <li><%= item.quantity%> <%= item.product.name %>, each one costs $<%= item.total_price.to_f / 100 %></li>        
       <% end %>
     </ul>
     <p>Thank you for your purchase, please visit us again!</p>

@@ -10,8 +10,8 @@ class OrdersController < ApplicationController
       #puts item.inspect
     end
     @to_display = Product.where(:id => item_ids)
-    #puts @to_display[0].inspect
-    UserMailer.purchase_email(order: @order, to_display: @to_display).deliver_now
+  
+    UserMailer.purchase_email(order: @order).deliver_now
   end
 
   def create
