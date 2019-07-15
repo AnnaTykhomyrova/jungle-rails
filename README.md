@@ -58,7 +58,7 @@ Cart is empty page
 Login page
 !['Screenshot of login page'](https://github.com/AnnaTykhomyrova/jungle-rails/blob/master/docks/login-page.png)
 
-Signup page
+Sign up page
 !['Screenshot of signup page'](https://github.com/AnnaTykhomyrova/jungle-rails/blob/master/docks/signup-page.png)
 
 Signed in user page
